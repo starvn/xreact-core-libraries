@@ -1,0 +1,53 @@
+#################
+## Misc
+#################
+nbproject
+manifest.mf
+build.xml
+node_modules
+node_modules/*
+npm-debug.log
+yarn-error.log
+src/**/*.{js,jsx}
+tests/**/*.{js,jsx}
+/index.js
+/xreact-core-libs.{js,jsx}
+config/testing-utils.js
+*.map
+*.d.ts
+!make.js
+!examples/**/*.{js,jsx}
+coverage
+**/*.metadata.json
+*.metadata.json
+/bundles
+/lib/tests
+build/
+
+#################
+## IDE
+#################
+.idea
+.project
+.settings
+.vscode
+
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+############
+## Mac
+############
+
+# Mac crap
+.DS_Store
+**/.DS_Store
+
+build/test-results/karma/
