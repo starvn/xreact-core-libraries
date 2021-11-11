@@ -14,7 +14,9 @@
  * limitations under the License.
  */
 
-export * from './util';
-export * from './type';
-export * from './lang';
-export * from './formatter';
+import Translate, { translate } from './translate';
+import TranslatorContext from './translator-context';
+
+export { translate };
+export { Translate };
+export { TranslatorContext };
