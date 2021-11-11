@@ -14,7 +14,4 @@
  * limitations under the License.
  */
 
-export * from './util';
-export * from './type';
-export * from './lang';
-export * from './formatter';
+export * from './redux-action.type';

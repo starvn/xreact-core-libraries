@@ -14,7 +14,10 @@
  * limitations under the License.
  */
 
-export * from './util';
-export * from './type';
-export * from './lang';
-export * from './formatter';
+export * from './log-util';
+export * from './url-util';
+export * from './storage-util';
+export * from './number-util';
+export * from './data-util';
+export * from './promise-util';
+export * from './dom-util';
