@@ -1,19 +1,3 @@
-/*
- * Copyright (c) 2021 Huy Duc Dao
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 export const enum StorageType {
   SESSION,
   LOCAL,
@@ -33,6 +17,8 @@ export const getStorage = (type: StorageType): Storage => {
 /**
  * Set an item into storage
  * @param type storage type
+ * @param key key to set
+ * @param value value to set
  */
 const setItem = (type: StorageType) => (key: string, value: any) => {
   getStorage(type).setItem(key, JSON.stringify(value));
@@ -41,6 +27,8 @@ const setItem = (type: StorageType) => (key: string, value: any) => {
 /**
  * Get an item from storage
  * @param type storage type
+ * @param key key to get
+ * @param defaultVal value to return if key doesnt exist
  */
 const getItem = (type: StorageType) => (key: string, defaultVal?: any) => {
   const val = getStorage(type).getItem(key);
@@ -55,6 +43,7 @@ const getItem = (type: StorageType) => (key: string, defaultVal?: any) => {
 /**
  * Remove item from storage
  * @param type storage type
+ * @param key key to remove
  */
 const removeItem = (type: StorageType) => (key: string) => {
   getStorage(type).removeItem(key);
