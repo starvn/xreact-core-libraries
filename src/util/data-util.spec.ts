@@ -1,4 +1,4 @@
-/*
+''/*
  * Copyright (c) 2021 Huy Duc Dao
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,4 +14,23 @@
  * limitations under the License.
  */
 
-export * from './util';
+import { byteSize, size } from "./index";
+
+describe("Data utils", () => {
+  describe("size", () => {
+    it("should return the correct size", () => {
+      const data = "Hello StarVN";
+      expect(size(data)).toBe(10.5);
+      expect(size("")).toBe(0);
+    });
+  });
+
+  describe("byteSize", () => {
+    it("should return the correct value", () => {
+      const data = "Hello StarVN";
+      expect(byteSize(data)).toBe("10.5 bytes");
+      expect(byteSize("")).toBe("0 bytes");
+    });
+  });
+});
+
