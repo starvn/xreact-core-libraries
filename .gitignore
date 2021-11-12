@@ -11,7 +11,7 @@ yarn-error.log
 src/**/*.{js,jsx}
 tests/**/*.{js,jsx}
 /index.js
-/xreact-core-libs.{js,jsx}
+/xreact-core-libraries.{js,jsx}
 config/testing-utils.js
 *.map
 *.d.ts

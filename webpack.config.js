@@ -34,14 +34,14 @@ module.exports = {
     modules: ['node_modules'],
   },
 
-  entry: root('xreact-core-libs.ts'),
+  entry: root('xreact-core-libraries.ts'),
 
   output: {
     path: root('bundles'),
     publicPath: '/',
-    filename: 'xreact-core-libs.umd.js',
+    filename: 'xreact-core-libraries.umd.js',
     libraryTarget: 'umd',
-    library: 'xreact-core-libs',
+    library: 'xreact-core-libraries',
   },
 
   optimization: {
